@@ -172,7 +172,7 @@ figure {
  font-family: Roboto;
  font-size: 36px;
  color: #8081EA;
- font-weight: 300;
+ font-weight: 400;
  text-align: center;
 }
 
@@ -202,7 +202,6 @@ figure {
  50% {
   bottom: 5px;
  }
-
 }
 
 
@@ -215,11 +214,31 @@ figure {
  50% {
   bottom: 5px;
  }
+}
 
+
+/* Section global */
+
+.uppsok-content-section {
+ width: 800px;
+ margin: 0 auto;
+}
+
+.flex-section-content {
+ display: flex;
+ align-items: center;
+}
+
+.content-section {
+ padding: 25px;
 }
 
 
 /* Section Services */
+
+.img-section {
+ width: 25%;
+}
 
 .uppsok-flex {
  display: flex;
@@ -233,6 +252,33 @@ figure {
  font-weight: 900;
  color: #6D7CE7;
  padding: 12px;
+}
+
+.uppsok-para-section {
+ font-family: Roboto;
+ font-size: 16px;
+ font-weight: 600;
+ color: #8c8787;
+ padding: 12px;
+}
+
+.uppsok-para-section-right {
+ font-family: Roboto;
+ font-size: 16px;
+ font-weight: 600;
+ color: #8c8787;
+ padding: 12px;
+ text-align: right;
+}
+
+.uppsok-title-section-right {
+ /* Formations: */
+ font-family: Roboto;
+ font-size: 25px;
+ font-weight: 900;
+ color: #6D7CE7;
+ padding: 12px;
+ text-align: right;
 }
 
 
