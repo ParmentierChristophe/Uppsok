@@ -99,13 +99,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
 /* UPPSOK CONTAINER */
+
 .uppsok-container {
  max-width: 960px;
  position: relative;
  margin: 0 auto;
 }
+
+
 /* HEADER UPPSOK */
+
+
 /* Background */
 
 svg {
@@ -129,7 +135,9 @@ figure {
  background-repeat: no-repeat;
 }
 
+
 /* Flex object */
+
 .uppsok-box {
  margin: 0 auto;
  display: flex;
@@ -140,7 +148,9 @@ figure {
  align-items: center;
 }
 
+
 /* Logo */
+
 .uppsok-logo {
  font-family: Nunito;
  position: absolute;
@@ -154,7 +164,9 @@ figure {
  color: #fff;
 }
 
+
 /* Quote */
+
 .uppsok-quote {
  /* Nous imaginons vos s: */
  font-family: Roboto;
@@ -164,13 +176,90 @@ figure {
  text-align: center;
 }
 
+
 /* Slide down mouse */
+
 .uppsok-mouse {
  position: absolute;
  bottom: 0;
- padding: 2.5rem;
+ padding: 1rem;
+ -webkit-animation-name: mouse;
+ /* Safari 4.0 - 8.0 */
+ -webkit-animation-duration: 1.5s;
+ /* Safari 4.0 - 8.0 */
+ animation-name: mouse;
+ animation-duration: 1.5s;
+ animation-iteration-count: infinite;
 }
 
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes mouse {
+ 25% {
+  opacity: 0.6;
+ }
+ 50% {
+  bottom: 5px;
+ }
+
+}
+
+
+/* Standard syntax */
+
+@keyframes mouse {
+ 25% {
+  opacity: 0.6;
+ }
+ 50% {
+  bottom: 5px;
+ }
+
+}
+
+
+/* Section Services */
+
+.uppsok-flex {
+ display: flex;
+ align-items: center;
+}
+
+.uppsok-title-section {
+ /* Services: */
+ font-family: Roboto;
+ font-size: 25px;
+ font-weight: 900;
+ color: #6D7CE7;
+ padding: 12px;
+}
+
+
+/* Section Projects */
+
+.uppsok-flex-invert {
+ display: flex;
+ align-items: center;
+ flex-direction: row-reverse;
+}
+
+
+/* Section R&D */
+
+
+/* Footer */
+
+.bg-svg-footer {
+ position: absolute;
+ width: 100%;
+ background-image: url(../img/bg-svg-footer.svg);
+ background-size: cover;
+ height: 0;
+ padding: 0;
+ padding-bottom: 22%;
+ background-repeat: no-repeat;
+}
 
 
 /* ==========================================================================
