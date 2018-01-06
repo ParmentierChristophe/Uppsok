@@ -1,20 +1,23 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+ color: #222;
+ font-size: 1em;
+ line-height: 1.4;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -25,27 +28,29 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+ background: #b3d4fc;
+ text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+ background: #b3d4fc;
+ text-shadow: none;
 }
+
 
 /*
  * A better looking default horizontal rule
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+ display: block;
+ height: 1px;
+ border: 0;
+ border-top: 1px solid #ccc;
+ margin: 1em 0;
+ padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -53,88 +58,328 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
+audio, canvas, iframe, img, svg, video {
+ vertical-align: middle;
 }
+
 
 /*
  * Remove default fieldset styles.
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+ border: 0;
+ margin: 0;
+ padding: 0;
 }
+
 
 /*
  * Allow only vertical resizing of textareas.
  */
 
 textarea {
-    resize: vertical;
+ resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+ margin: 0.2em 0;
+ background: #ccc;
+ color: #000;
+ padding: 0.2em 0;
 }
+
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 
+/* UPPSOK CONTAINER */
+
+.uppsok-container {
+ max-width: 960px;
+ position: relative;
+ margin: 0 auto;
+}
+
+
+/* HEADER UPPSOK */
+
+
+/* Background */
 
 svg {
-    position: absolute;
+ position: absolute;
 }
 
-figure{
-    position: relative;
-    display: flex !important;
-    justify-content: space-around;
-}
-.logo {
-    padding-top: 25px;
+figure {
+ position: relative;
+ display: flex !important;
+ justify-content: space-around;
 }
 
-.menu {
-    align-self: flex-end;
+.bg-svg {
+ position: absolute;
+ width: 100%;
+ background-image: url(../img/bg.svg);
+ background-size: cover;
+ height: 0;
+ padding: 0;
+ padding-bottom: 62%;
+ background-repeat: no-repeat;
 }
 
 
+/* Flex object */
+
+.uppsok-box {
+ margin: 0 auto;
+ display: flex;
+ max-width: 960px;
+ height: 100vh;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
 
 
+/* Logo */
+
+.uppsok-logo {
+ font-family: Nunito;
+ position: absolute;
+ color: #fff;
+ font-weight: bold;
+ font-size: 36px;
+ margin: 2.5rem;
+}
+
+.uppsok-logo:hover {
+ color: #fff;
+}
 
 
+/* Quote */
+
+.uppsok-quote {
+ /* Nous imaginons vos s: */
+ font-family: Roboto;
+ font-size: 36px;
+ color: #8081EA;
+ font-weight: 400;
+ text-align: center;
+}
 
 
+/* Slide down mouse */
 
+.uppsok-mouse {
+ position: absolute;
+ bottom: 0;
+ padding: 1rem;
+ -webkit-animation-name: mouse;
+ /* Safari 4.0 - 8.0 */
+ -webkit-animation-duration: 1.5s;
+ /* Safari 4.0 - 8.0 */
+ animation-name: mouse;
+ animation-duration: 1.5s;
+ animation-iteration-count: infinite;
+}
+
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes mouse {
+ 25% {
+  opacity: 0.6;
+ }
+ 50% {
+  bottom: 5px;
+ }
+}
+
+
+/* Standard syntax */
+
+@keyframes mouse {
+ 25% {
+  opacity: 0.6;
+ }
+ 50% {
+  bottom: 5px;
+ }
+}
+
+
+/* Section global */
+
+.uppsok-content-section {
+ width: 800px;
+ margin: 0 auto;
+}
+
+.flex-section-content {
+ display: flex;
+ align-items: center;
+}
+
+.content-section {
+ padding: 25px;
+}
+
+
+/* Section Services */
+
+.img-section {
+ width: 25%;
+}
+
+.uppsok-flex {
+ display: flex;
+ align-items: center;
+}
+
+.uppsok-title-section {
+ /* Services: */
+ font-family: Roboto;
+ font-size: 25px;
+ font-weight: 900;
+ color: #6D7CE7;
+ padding: 12px;
+}
+
+.uppsok-para-section {
+ font-family: Roboto;
+ font-size: 16px;
+ font-weight: 600;
+ color: #8c8787;
+ padding: 12px;
+}
+
+.uppsok-para-section-right {
+ font-family: Roboto;
+ font-size: 16px;
+ font-weight: 600;
+ color: #8c8787;
+ padding: 12px;
+ text-align: right;
+}
+
+.uppsok-title-section-right {
+ /* Formations: */
+ font-family: Roboto;
+ font-size: 25px;
+ font-weight: 900;
+ color: #6D7CE7;
+ padding: 12px;
+ text-align: right;
+}
+
+
+/* Section Projects */
+
+.uppsok-flex-invert {
+ display: flex;
+ align-items: center;
+ flex-direction: row-reverse;
+}
+
+.uppsok-projet-title {
+ font-family: Roboto;
+ color: #6D7CE7;
+ font-weight: bold;
+ text-align: center;
+ font-size: 25px;
+}
+
+
+/* Section R&D */
+
+.rd-svg {
+ position: absolute;
+ width: 99%;
+ background-image: url(../img/rd.svg);
+ background-size: cover;
+ height: 0;
+ padding: 0;
+ padding-bottom: 38%;
+ background-repeat: no-repeat;
+}
+
+.img-rd-section {
+ margin: 0 auto;
+ position: relative;
+ text-align: center;
+ width: 100%;
+ padding-bottom: 8rem;
+}
+
+.microscope {
+ padding-top: 3rem;
+ width: 15%;
+}
+
+.uppsok-rd-title {
+ font-family: Roboto;
+ color: #fff;
+ font-weight: bold;
+ font-size: 25px;
+}
+
+.container-text {
+ width: 70%;
+ margin: 0 auto;
+}
+
+.uppsok-text-rd {
+ color: #fff;
+ padding: 1rem;
+}
+
+
+/* Footer */
+
+.bg-svg-footer {
+ position: absolute;
+ width: 100%;
+ background-image: url(../img/bg-svg-footer.svg);
+ background-size: cover;
+ height: 0;
+ padding: 0;
+ padding-bottom: 22%;
+ background-repeat: no-repeat;
+}
+
+.uppsok-right-footer {
+ position: relative;
+ text-align: center;
+ color: #fff;
+ font-family: Roboto;
+ /* à changer */
+ padding-top: 17rem;
+
+}
 
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+
 /*
  * Hide visually and from screen readers
  */
 
 .hidden {
-    display: none !important;
+ display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -142,15 +387,16 @@ figure{
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+ border: 0;
+ clip: rect(0 0 0 0);
+ height: 1px;
+ margin: -1px;
+ overflow: hidden;
+ padding: 0;
+ position: absolute;
+ width: 1px;
 }
+
 
 /*
  * Extends the .visuallyhidden class to allow the element
@@ -158,23 +404,24 @@ figure{
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+ clip: auto;
+ height: auto;
+ margin: 0;
+ overflow: visible;
+ position: static;
+ width: auto;
 }
+
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 
 .invisible {
-    visibility: hidden;
+ visibility: hidden;
 }
+
 
 /*
  * Clearfix: contain floats
@@ -188,15 +435,17 @@ figure{
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.clearfix:before, .clearfix:after {
+ content: " ";
+ /* 1 */
+ display: table;
+ /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+ clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -205,15 +454,13 @@ figure{
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+ /* Style adjustments for viewports that meet the condition */
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+ /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -222,74 +469,52 @@ figure{
    ========================================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+ *, *:before, *:after, *:first-letter, *:first-line {
+  background: transparent !important;
+  color: #000 !important;
+  /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
+  box-shadow: none !important;
+  text-shadow: none !important;
+ }
+ a, a:visited {
+  text-decoration: underline;
+ }
+ a[href]:after {
+  content: " (" attr(href) ")";
+ }
+ abbr[title]:after {
+  content: " (" attr(title) ")";
+ }
+ /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    /*
+ a[href^="#"]:after, a[href^="javascript:"]:after {
+  content: "";
+ }
+ pre, blockquote {
+  border: 1px solid #999;
+  page-break-inside: avoid;
+ }
+ /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+ thead {
+  display: table-header-group;
+ }
+ tr, img {
+  page-break-inside: avoid;
+ }
+ img {
+  max-width: 100% !important;
+ }
+ p, h2, h3 {
+  orphans: 3;
+  widows: 3;
+ }
+ h2, h3 {
+  page-break-after: avoid;
+ }
 }
