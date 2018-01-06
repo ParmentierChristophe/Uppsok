@@ -290,8 +290,57 @@ figure {
  flex-direction: row-reverse;
 }
 
+.uppsok-projet-title {
+ font-family: Roboto;
+ color: #6D7CE7;
+ font-weight: bold;
+ text-align: center;
+ font-size: 25px;
+}
+
 
 /* Section R&D */
+
+.rd-svg {
+ position: absolute;
+ width: 99%;
+ background-image: url(../img/rd.svg);
+ background-size: cover;
+ height: 0;
+ padding: 0;
+ padding-bottom: 38%;
+ background-repeat: no-repeat;
+}
+
+.img-rd-section {
+ margin: 0 auto;
+ position: relative;
+ text-align: center;
+ width: 100%;
+ padding-bottom: 8rem;
+}
+
+.microscope {
+ padding-top: 3rem;
+ width: 15%;
+}
+
+.uppsok-rd-title {
+ font-family: Roboto;
+ color: #fff;
+ font-weight: bold;
+ font-size: 25px;
+}
+
+.container-text {
+ width: 70%;
+ margin: 0 auto;
+}
+
+.uppsok-text-rd {
+ color: #fff;
+ padding: 1rem;
+}
 
 
 /* Footer */
@@ -305,6 +354,16 @@ figure {
  padding: 0;
  padding-bottom: 22%;
  background-repeat: no-repeat;
+}
+
+.uppsok-right-footer {
+ position: relative;
+ text-align: center;
+ color: #fff;
+ font-family: Roboto;
+ /* à changer */
+ padding-top: 17rem;
+
 }
 
 
