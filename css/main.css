@@ -221,12 +221,12 @@ figure {
 /* Section global */
 
 .uppsok-content-section {
- width: 800px;
  margin: 0 auto;
 }
 
 .flex-section-content {
  display: flex;
+ flex-direction: column;
  align-items: center;
 }
 
@@ -238,7 +238,7 @@ figure {
 /* Section Services */
 
 .img-section {
- width: 25%;
+ width: 60%;
 }
 
 .uppsok-flex {
@@ -287,8 +287,8 @@ figure {
 
 .uppsok-flex-invert {
  display: flex;
+ flex-direction: column;
  align-items: center;
- flex-direction: row-reverse;
 }
 
 .uppsok-projet-title {
@@ -392,6 +392,22 @@ figure {
   .uppsok-logo {
      margin: 2.5rem;
   }
+
+  .flex-section-content {
+    flex-direction: row;
+  }
+
+  .uppsok-flex-invert {
+   flex-direction: row-reverse;
+  }
+
+  .uppsok-content-section {
+   width: 800px;
+ }
+
+ .img-section {
+  width: 25%;
+ }
 
 }
 /* ==========================================================================
