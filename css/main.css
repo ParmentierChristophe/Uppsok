@@ -232,6 +232,7 @@ figure {
 
 .content-section {
  padding: 25px;
+ text-align: center;
 }
 
 
@@ -269,7 +270,6 @@ figure {
  font-weight: 600;
  color: #8c8787;
  padding: 12px;
- text-align: right;
 }
 
 .uppsok-title-section-right {
@@ -279,7 +279,6 @@ figure {
  font-weight: 900;
  color: #6D7CE7;
  padding: 12px;
- text-align: right;
 }
 
 
@@ -405,8 +404,16 @@ figure {
    width: 800px;
  }
 
+ .content-section {
+  text-align: left;
+ }
+
  .img-section {
   width: 25%;
+ }
+
+ .uppsok-para-section-right, .uppsok-title-section-right {
+  text-align: right;
  }
 
 }
