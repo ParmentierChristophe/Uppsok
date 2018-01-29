@@ -113,7 +113,11 @@ textarea {
 
 /* HEADER UPPSOK */
 
-
+h1 {
+  opacity: 0;
+  -webkit-transition: opacity 4s; /* Safari */
+   transition: opacity 4s;
+}
 /* Background */
 
 svg {
