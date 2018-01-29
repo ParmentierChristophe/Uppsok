@@ -118,8 +118,8 @@ h1 {
   -webkit-transition: opacity 4s; /* Safari */
    transition: opacity 4s;
 }
-/* Background */
 
+/* Background */
 svg {
  position: absolute;
 }
@@ -344,6 +344,15 @@ figure {
 .uppsok-text-rd {
  color: #fff;
  padding: 1rem;
+}
+
+#RDsection {
+  background-color: black;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 1.5s; /* Safari */
+  transition: height 1.5s;
 }
 
 
