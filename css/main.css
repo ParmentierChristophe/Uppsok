@@ -221,6 +221,17 @@ figure {
  }
 }
 
+/* Utilities */
+
+.uppsokButton {
+  background-color: #8081EA;
+  color: #fff;
+  padding: .3em;
+  border: none;
+  border-radius: 2px;
+  width: 100px;
+  font-weight: bold;
+}
 
 /* Section global */
 
@@ -355,6 +366,12 @@ figure {
   transition: height 1.5s;
 }
 
+/* Contact */
+
+#contactForm input {
+  display: block;
+  margin: .5em .5em;
+}
 
 /* Footer */
 
