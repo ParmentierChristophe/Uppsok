@@ -226,11 +226,18 @@ figure {
 .uppsokButton {
   background-color: #8081EA;
   color: #fff;
-  padding: .3em;
+  padding:.3em 1em;
   border: none;
   border-radius: 2px;
-  width: 100px;
   font-weight: bold;
+  -webkit-transition: background-color 1s, color 1s, border 1s; /* Safari */
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.uppsokButton:hover {
+  background-color: #fff;
+  color: #8081EA;
+  border: 2px solid #8081EA;
 }
 
 /* Section global */
@@ -368,9 +375,18 @@ figure {
 
 /* Contact */
 
-#contactForm input {
+#contactForm input, textarea {
   display: block;
   margin: .5em .5em;
+  border: 2px solid #8081EA;
+}
+
+#contactForm input {
+  padding: .2em;
+}
+
+.formBlock {
+  margin: 1em 0em;
 }
 
 /* Footer */
