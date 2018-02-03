@@ -28,9 +28,15 @@ RDbutton.onclick = function() {
 	if(modalStatus) {
 		changeHeight(0);
 		modalStatus = false;
+		setTimeout(function(){
+			RDbutton.innerHTML = "Voir les projets";
+		}, 1200);
 	}
 	else {
 		changeHeight(400);
 		modalStatus = true;
+		setTimeout(function(){
+			RDbutton.innerHTML = "Masquer";
+		}, 1200);
 	}
 };
