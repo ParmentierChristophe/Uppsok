@@ -223,10 +223,8 @@ figure {
 
 /* Utilities */
 
-.uppsokButton {
+.btn {
   max-width: 150px;
-  background-color: #8081EA;
-  color: #fff;
   padding:.3em 1em;
   border: none;
   border-radius: 2px;
@@ -235,10 +233,25 @@ figure {
     transition: background-color 1s, color 1s, border 1s;
 }
 
+.uppsokButton {
+  background-color: #8081EA;
+  color: #fff;
+}
+
 .uppsokButton:hover {
   background-color: #fff;
   color: #8081EA;
   border: 2px solid #8081EA;
+}
+
+.uppsokLightButton {
+  background-color: #fff;
+  color: #8081EA;
+}
+
+.uppsokLightButton:hover {
+  background-color: #8081EA;
+  color: #fff;
 }
 
 /* Section global */
@@ -388,7 +401,7 @@ figure {
   margin: .5em .5em;
   border: 2px solid #8081EA;
   border-radius: 2px;
-  width: 300px;
+  width: 250px;
 }
 
 #contactForm input {
