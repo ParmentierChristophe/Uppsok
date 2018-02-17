@@ -5,6 +5,25 @@ $(function() {
 		});
 });
 
+//Slider
+
+$(document).ready(function() {
+
+ $('.all-slides').slick({
+  infinite: true,
+  nextArrow: '<i class="fa fa-arrow-right arrows"></i>',
+  prevArrow: '<i class="fa fa-arrow-left arrows"></i>',
+  arrows: true,
+  speed: 500,
+  centerMode: true,
+  centerPadding: '0px',
+  cssEase: 'ease',
+  slidesToShow: 1,
+  adaptiveHeight: true
+ });
+});
+
+
 //Function to make the main title progressivly appear on home page
 function addOpacity() {
 	var title = document.getElementsByTagName("h1");
