@@ -341,6 +341,34 @@ figure {
  font-size: 25px;
 }
 
+.all-slides {
+  margin: 0 auto;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  padding: 1rem;
+}
+
+.slide {
+ height: 200px;
+ margin: 0 auto;
+}
+
+.arrows {
+color: #6D7CE7;
+cursor: pointer;
+}
+
+.text-slide{
+  color: #6D7CE7;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-weight: 500;
+}
+.img-slide {
+  margin: 0 auto;
+}
 
 /* Section R&D */
 
