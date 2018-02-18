@@ -39,8 +39,13 @@ var RDbutton = document.getElementById("RDmodal");
 var modalStatus = false;
 
 function changeHeight(pixelHeight) {
-	var RDsection = document.getElementById("RDsection");
-	RDsection.style.height = pixelHeight + "px";
+  var RDsection = document.getElementById("RDsection");
+  if(Number.isInteger(pixelHeight)) {
+    RDsection.style.height = pixelHeight + "px";
+  }
+  else {
+    RDsection.style.height = pixelHeight;
+  }
 }
 
 RDbutton.onclick = function() {
@@ -49,13 +54,13 @@ RDbutton.onclick = function() {
 		modalStatus = false;
 		setTimeout(function(){
 			RDbutton.innerHTML = "Voir les projets";
-		}, 1200);
+		}, 400);
 	}
 	else {
-		changeHeight(400);
+		changeHeight("auto");
 		modalStatus = true;
 		setTimeout(function(){
 			RDbutton.innerHTML = "Masquer";
-		}, 1200);
+		}, 400);
 	}
 };
