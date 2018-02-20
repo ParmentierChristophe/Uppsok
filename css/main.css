@@ -106,14 +106,20 @@ textarea {
  max-width: 960px;
  position: relative;
  margin: 0 auto;
+ padding-left: .5rem;
+ padding-right: .5rem;
 }
 
 
 /* HEADER UPPSOK */
 
+h1 {
+  opacity: 0;
+  -webkit-transition: opacity 4s; /* Safari */
+   transition: opacity 4s;
+}
 
 /* Background */
-
 svg {
  position: absolute;
 }
@@ -157,7 +163,6 @@ figure {
  color: #fff;
  font-weight: bold;
  font-size: 36px;
- margin: 2.5rem;
 }
 
 .uppsok-logo:hover {
@@ -216,28 +221,61 @@ figure {
  }
 }
 
+/* Utilities */
+
+.btn {
+  max-width: 150px;
+  padding:.3em 1em;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  -webkit-transition: background-color 1s, color 1s, border 1s; /* Safari */
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.uppsokButton {
+  background-color: #8081EA;
+  color: #fff;
+}
+
+.uppsokButton:hover {
+  background-color: #fff;
+  color: #8081EA;
+  border: 2px solid #8081EA;
+}
+
+.uppsokLightButton {
+  background-color: #fff;
+  color: #8081EA;
+}
+
+.uppsokLightButton:hover {
+  background-color: #8081EA;
+  color: #fff;
+}
 
 /* Section global */
 
 .uppsok-content-section {
- width: 800px;
  margin: 0 auto;
 }
 
 .flex-section-content {
  display: flex;
+ flex-direction: column;
  align-items: center;
 }
 
 .content-section {
  padding: 25px;
+ text-align: center;
 }
 
 
 /* Section Services */
 
 .img-section {
- width: 25%;
+ width: 60%;
 }
 
 .uppsok-flex {
@@ -254,6 +292,13 @@ figure {
  padding: 12px;
 }
 
+.mainFontStyle {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  color: #8c8787;
+}
+
 .uppsok-para-section {
  font-family: Roboto;
  font-size: 16px;
@@ -268,7 +313,6 @@ figure {
  font-weight: 600;
  color: #8c8787;
  padding: 12px;
- text-align: right;
 }
 
 .uppsok-title-section-right {
@@ -278,7 +322,6 @@ figure {
  font-weight: 900;
  color: #6D7CE7;
  padding: 12px;
- text-align: right;
 }
 
 
@@ -286,8 +329,8 @@ figure {
 
 .uppsok-flex-invert {
  display: flex;
+ flex-direction: column;
  align-items: center;
- flex-direction: row-reverse;
 }
 
 .uppsok-projet-title {
@@ -369,6 +412,66 @@ cursor: pointer;
  padding: 1rem;
 }
 
+#RDsection {
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: height 1.5s; /* Safari */
+  transition: height 1.5s;
+}
+
+/* Cards */
+.rdContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  width: 90%;
+  margin: 1em 0;
+  text-align: center;
+  margin-bottom: .3em;
+}
+
+.card img {
+  width: 100%;
+}
+
+.cardContent {
+  height: 100px;
+  overflow: hidden;
+}
+
+.card h4 {
+  font-weight: bold;
+  color: #6D7CE7;
+}
+
+.card p {
+  font-size: .8em;
+}
+
+/* Contact */
+
+#contactForm input, textarea {
+  display: block;
+  margin: .5em .5em;
+  border: 2px solid lightgrey;
+  border-radius: 2px;
+  width: 250px;
+}
+
+#contactForm input:focus, textarea:focus {
+  border: 2px solid #8081EA;
+}
+
+#contactForm input {
+  padding: .2em;
+}
+
+.formBlock {
+  margin: 1em 0em;
+}
 
 /* Footer */
 
@@ -393,7 +496,82 @@ cursor: pointer;
 
 }
 
+/*Media query for smartphone size*/
 
+@media screen and (min-width: 320px) {
+
+  .uppsok-logo {
+    margin-left: 0.5rem;
+  }
+
+}
+
+/* tablets */
+@media screen and (min-width: 500px) {
+
+  .uppsok-logo {
+     margin: 1.5rem;
+  }
+
+}
+
+/* bigger screens */
+@media screen and (min-width: 800px) {
+
+  .uppsok-logo {
+     margin: 2.5rem;
+  }
+
+  .flex-section-content {
+    flex-direction: row;
+  }
+
+  .uppsok-flex-invert {
+   flex-direction: row-reverse;
+  }
+
+  .uppsok-content-section {
+   width: 800px;
+ }
+
+ .content-section {
+  text-align: left;
+ }
+
+ .img-section {
+  width: 25%;
+ }
+
+ .uppsok-para-section-right, .uppsok-title-section-right {
+  text-align: right;
+ }
+
+ /* Cards */
+ .card {
+   width: 28%;
+   margin: 1em;
+ }
+
+ .cardContent {
+   height: 160px;
+   overflow: hidden;
+ }
+
+ .card h4 {
+   font-size: 1.5em;
+ }
+
+ .card p {
+   font-size: 1em;
+ }
+
+ /* Contact */
+
+ #contactForm input, textarea {
+   width: 400px;
+ }
+
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
