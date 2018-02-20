@@ -234,7 +234,6 @@ figure {
 }
 
 .uppsokButton {
-  background-color: #8081EA;
   color: #fff;
 }
 
@@ -247,6 +246,7 @@ figure {
 .uppsokLightButton {
   background-color: #fff;
   color: #8081EA;
+  border-radius: 15px;
 }
 
 .uppsokLightButton:hover {
@@ -456,7 +456,7 @@ cursor: pointer;
 #contactForm input, textarea {
   display: block;
   margin: .5em .5em;
-  border: 2px solid lightgrey;
+  border: 2px solid #8081EA;
   border-radius: 2px;
   width: 250px;
 }
@@ -475,16 +475,7 @@ cursor: pointer;
 
 /* Footer */
 
-.bg-svg-footer {
- position: absolute;
- width: 100%;
- background-image: url(../img/bg-svg-footer.svg);
- background-size: cover;
- height: 0;
- padding: 0;
- padding-bottom: 22%;
- background-repeat: no-repeat;
-}
+
 
 .uppsok-right-footer {
  position: relative;
@@ -504,6 +495,17 @@ cursor: pointer;
     margin-left: 0.5rem;
   }
 
+  .bg-svg-footer {
+   position: absolute;
+   width: 100%;
+   background-image: url(../img/bg-svg-footer.svg);
+   background-size: cover;
+   height: 0;
+   padding: 0;
+   padding-bottom: 89%;
+   background-repeat: no-repeat;
+  }
+
 }
 
 /* tablets */
@@ -511,6 +513,17 @@ cursor: pointer;
 
   .uppsok-logo {
      margin: 1.5rem;
+  }
+
+  .bg-svg-footer {
+   position: absolute;
+   width: 100%;
+   background-image: url(../img/bg-svg-footer.svg);
+   background-size: cover;
+   height: 0;
+   padding: 0;
+   padding-bottom: 68%;
+   background-repeat: no-repeat;
   }
 
 }
@@ -569,6 +582,30 @@ cursor: pointer;
 
  #contactForm input, textarea {
    width: 400px;
+   border-radius: 15px;
+   margin: 0 auto;
+   padding: 5px;
+ }
+
+ .uppsok-contact-form {
+  text-align: center;
+ }
+
+input {
+  margin: 0 auto;
+  border-radius: 15px;
+ }
+
+
+ .bg-svg-footer {
+  position: absolute;
+  width: 100%;
+  background-image: url(../img/bg-svg-footer.svg);
+  background-size: cover;
+  height: 0;
+  padding: 0;
+  padding-bottom: 38%;
+  background-repeat: no-repeat;
  }
 
 }
